@@ -1,19 +1,20 @@
 
 .corpo{
     background-color:#E5E5E5;
-    width: 414px;
+    width: 100%;
     height: 100%;
     position:relative;
 }
 
 .principal{
-    width: 414px;
+    position: relative;
+    width: 100%;
     height: 100%;
     display: flex;
 }
 
 .barrainicial{
-    width: 414px;
+    width: 100%;
     height: 92px;
     background-color: red;
     display:flex;
@@ -56,7 +57,7 @@
 
 .conteiner{
     background: #E5E5E5;
-    width: 414px;
+    width: 100%;
     height: 1000px;
 }
 
@@ -153,13 +154,28 @@ color: #000000;
 
 
 .franguinho2{
-    width: 414px;
-    height: 216px;
+    margin-left:19px;
+    width:100%;
+    height:230px;
     margin-top:17px;
     display:flex;  
     grid-template-columns:60% 40%;
     grid-gap: 19px;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
+
+
+.conteiner-bebida{
+    border-radius: 10px;
+    background-color: 
+    #FFFFFF;
+    width: 172px;
+    height: 216px;
+    flex-shrink:1;
+}
+
+
 
 
 .letreiro-sobremesa{
@@ -168,8 +184,6 @@ color: #000000;
     margin-left: 19px;
     margin-top: 27px;
 }
-
-
 
 .franguinho3{
     background-color: blueviolet;
@@ -184,7 +198,7 @@ color: #000000;
 
 
 .barrafinal{
-    width: 414px;
+    width: 100%;
     height: 92px;
     background: #FFFFFF;
     display:flex;
@@ -192,6 +206,8 @@ color: #000000;
     position: fixed;
     bottom:0;
     left: 0;
+    flex-direction: column;
+    justify-content:center;
 }
 
 .botaofinal{
@@ -199,9 +215,9 @@ color: #000000;
     border-radius: 50px;
     border: none;
     outline: none;
-    width: 364px;
+    width: 100%;
     height:61px;
-    margin:auto;
+    margin-left:6px;
 }
 
 .textobotao{
