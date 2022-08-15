@@ -139,6 +139,11 @@ color: #333333;
     border-radius: 9px;
 }
 
+.selecionadoo{
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+    border-radius: 9px;
+}
+
 .letreiro-bebida{
     width: 414px;
     height: 25px;
@@ -170,11 +175,18 @@ color: #333333;
     height: 15px;
     margin-top: 10px;
     margin-left:55px;
-    visibility:hidden;
 }
 
-.verificadoon{
-    visibility:visible;
+.icone{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left:55px;
+    color: green;
+}
+
+.escondido{
+    display:none;
 }
 
 .conteiner-verificado{
@@ -233,7 +245,7 @@ color: #000000;
     width: 172px;
     height: 216px;
     flex-shrink:1;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+   
 }
 
 .conteiner-bebida2{
@@ -243,7 +255,7 @@ color: #000000;
     width: 172px;
     height: 216px;
     flex-shrink:1;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    
 }
 
 .conteiner-bebida3{
@@ -253,17 +265,15 @@ color: #000000;
     width: 172px;
     height: 216px;
     flex-shrink:1;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+
 }
 
 .conteiner-bebida4{
     border-radius: 10px;
-    background-color: 
-    #FFFFFF;
+    background-color: #FFFFFF;
     width: 172px;
     height: 216px;
     flex-shrink:1;
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -312,9 +322,7 @@ color: #000000;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
 
-.escondido{
-    box-shadow:none;
-}
+
 
 .barrafinal{
     width: 100%;
