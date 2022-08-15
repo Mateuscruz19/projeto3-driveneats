@@ -77,7 +77,6 @@ let principall;
 
 
 
-
  function habilitaBotaoContinuar (){
    if(principall !== undefined){
        if(bebida !== undefined){
