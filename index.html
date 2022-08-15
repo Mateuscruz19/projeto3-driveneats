@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700&family=Righteous&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="corpo corpoconfirmacao">
+    <div class="corpo">
     <Div class="principal" ABA INTEIRA>
         <div class="barrainicial " BARRA VERMELHA EM CIMA>
                 <div class="conteiner-logo" LOGO> 
@@ -35,28 +35,28 @@
                 <img src="./imagens/frango_yin_yang 1.png" class="imagem-frango" alt="">
                 <h1 class="titulo-frango">Frango Yin Yang</h1>
                 <p class="subtitulo-frango">Um pouco de batata, <br> um pouco de salada</p>
-                    <h1 class="valor-frango">R$ 14.90</h1>    
+                    <h1 class="valor-frango">R$ <span class="valor">14.90 </span></h1>    
                     <ion-icon class="icone escondido" name="checkmark-circle"></ion-icon>
             </div>
             <div onclick="selecionarfrango('conteiner-frango2')"  class="conteiner-frango2" CAIXINHAS DOS PRATOS>
                 <img src="./imagens/frangopassarinho.jpg" class="imagem-frango" alt="">
                 <h1 class="titulo-frango">Frango á passarinho</h1>
                 <p class="subtitulo-frango">Um pouco de crocancia, <br> um pouco de molho</p>
-                 <h1 class="valor-frango">R$ 14.90</h1>
+                <h1 class="valor-frango">R$ <span class="valor">22.08 </span></h1>
                  <ion-icon class="icone escondido" name="checkmark-circle"></ion-icon>
             </div>
             <div onclick="selecionarfrango('conteiner-frango3')"  class="conteiner-frango3" CAIXINHAS DOS PRATOS>
                 <img src="./imagens/frangocumpao.jpg" class="imagem-frango" alt="">
                 <h1 class="titulo-frango">Frango Kung Pao</h1>
                 <p class="subtitulo-frango">Um pouco de batata, <br> um pouco de legumes</p>
-                    <h1 class="valor-frango">R$ 14.90</h1>
+                <h1 class="valor-frango">R$ <span class="valor">33.90 </span></h1>
                     <ion-icon class="icone escondido" name="checkmark-circle"></ion-icon>
             </div>
             <div onclick="selecionarfrango('conteiner-frango4')"  class="conteiner-frango4" CAIXINHAS DOS PRATOS>
                 <img src="./imagens/frangomilanesa.webp" class="imagem-frango" alt="">
                 <h1 class="titulo-frango">Frango a Milanesa</h1>
                 <p class="subtitulo-frango">Um pouco de molho, <br> um pouco carne</p>
-                <h1 class="valor-frango">R$ 14.90</h1>
+                <h1 class="valor-frango">R$ <span class="valor">44.87 </span></h1>
                 <ion-icon class="icone escondido" name="checkmark-circle"></ion-icon>
             </div>
         </div>
@@ -122,7 +122,7 @@
         </div>
     </div>
     <div class="barrafinal">
-        <button disabled onclick="funcaowhatsapp()" class="botaofinal">
+        <button onclick="funcaowhatsapp()" class="botaofinal" disabled>
             <h1 class="textobotao">Selecione os 3 itens <br> para fechar o pedido</h1>
         </button>
     </div>

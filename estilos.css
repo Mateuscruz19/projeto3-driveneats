@@ -11,6 +11,12 @@ body{
     position:relative;
 }
 
+.corpoconfirmacao{
+    width: 414px;
+    height:900px;
+    background-color: white;
+    filter: brightness(90%);
+}
 
 .principal{
     position: relative;
