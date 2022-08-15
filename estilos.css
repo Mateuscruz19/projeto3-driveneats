@@ -97,7 +97,7 @@ color: #333333;
     overflow-y: hidden;
 }
 
-.conteiner-frango{
+.conteiner-frango1{
     border-radius: 10px;
     background-color: 
     #FFFFFF;
@@ -107,6 +107,37 @@ color: #333333;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
 
+.conteiner-frango2{
+    border-radius: 10px;
+    background-color: 
+    #FFFFFF;
+    width: 172px;
+    height: 216px;
+    flex-shrink:1;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+}
+.conteiner-frango3{
+    border-radius: 10px;
+    background-color: 
+    #FFFFFF;
+    width: 172px;
+    height: 216px;
+    flex-shrink:1;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+}
+.conteiner-frango4{
+    border-radius: 10px;
+    background-color: 
+    #FFFFFF;
+    width: 172px;
+    height: 216px;
+    flex-shrink:1;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+}
+.selecionado{
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+    border-radius: 9px;
+}
 
 .letreiro-bebida{
     width: 414px;
@@ -134,6 +165,27 @@ color: #333333;
     font-style: normal;
 }
 
+.verificado{
+    width: 15px;
+    height: 15px;
+    margin-top: 10px;
+    margin-left:55px;
+    visibility:hidden;
+}
+
+.verificadoon{
+    visibility:visible;
+}
+
+.conteiner-verificado{
+    
+    margin-left:140px;
+    margin-bottom:40px;
+
+}
+
+
+
 .subtitulo-frango{
     margin-left: 10px;
     margin-top: 4px;
@@ -146,6 +198,7 @@ color: #333333;
 }
 
 .valor-frango{
+    display: inline;
     margin-top: 10px;
     margin-left: 10px;
     font-family: 'Roboto';
@@ -162,7 +215,7 @@ color: #000000;
 
 .franguinho2{
     margin-left:19px;
-    width:100%;
+    width:414px;
     height:230px;
     margin-top:17px;
     display:flex;  
@@ -173,7 +226,37 @@ color: #000000;
 }
 
 
-.conteiner-bebida{
+.conteiner-bebida1{
+    border-radius: 10px;
+    background-color: 
+    #FFFFFF;
+    width: 172px;
+    height: 216px;
+    flex-shrink:1;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+}
+
+.conteiner-bebida2{
+    border-radius: 10px;
+    background-color: 
+    #FFFFFF;
+    width: 172px;
+    height: 216px;
+    flex-shrink:1;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+}
+
+.conteiner-bebida3{
+    border-radius: 10px;
+    background-color: 
+    #FFFFFF;
+    width: 172px;
+    height: 216px;
+    flex-shrink:1;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+}
+
+.conteiner-bebida4{
     border-radius: 10px;
     background-color: 
     #FFFFFF;
@@ -185,9 +268,22 @@ color: #000000;
 
 
 
+.letreiro-sobremesa1{
+    width: 414px;
+    height: 25px;
+    margin-left: 19px;
+    margin-top: 27px;
+}
 
 
-.letreiro-sobremesa{
+.letreiro-sobremesa2{
+    width: 414px;
+    height: 25px;
+    margin-left: 19px;
+    margin-top: 27px;
+}
+
+.letreiro-sobremesa3{
     width: 414px;
     height: 25px;
     margin-left: 19px;
@@ -196,7 +292,7 @@ color: #000000;
 
 .franguinho3{
     margin-left:19px;
-    width:100%;
+    width:414px;
     height:230px;
     margin-top:17px;
     display:flex;  
@@ -214,6 +310,10 @@ color: #000000;
     height: 216px;
     flex-shrink:1;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+}
+
+.escondido{
+    box-shadow:none;
 }
 
 .barrafinal{
@@ -250,3 +350,4 @@ color: #000000;
     color: #FFFFFF;
     cursor: pointer;
 }
+
