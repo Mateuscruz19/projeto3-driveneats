@@ -11,6 +11,7 @@ body{
     position:relative;
 }
 
+
 .principal{
     position: relative;
     width: 414px;
@@ -337,14 +338,21 @@ color: #000000;
     justify-content:center;
 }
 
+.botaoverde{
+    color: white;
+    background-color:#32B72F;
+    font-size: 20px;
+}
+
 .botaofinal{
-    background: #CBCBCB;
+    
     border-radius: 50px;
     border: none;
     outline: none;
     width: 100%;
     height:61px;
     margin-left:6px;
+    
 }
 
 .textobotao{
@@ -355,7 +363,7 @@ color: #000000;
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.018em;
-    color: #FFFFFF;
+  
     cursor: pointer;
 }
 
