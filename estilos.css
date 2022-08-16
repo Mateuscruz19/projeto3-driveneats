@@ -4,6 +4,15 @@ body{
 }
 
 
+confirmar-pedido{
+    background-color: #50d074;
+    max-width: 480px;
+    width: 100%;
+    font-size: 22px;
+    color:white;
+
+}
+
 .corpo{
     background-color:#E5E5E5;
     width: 414px;
@@ -77,7 +86,7 @@ body{
 .letreiro-frango{
  width: 414px;
  height: 25px;
- margin-top:123px;
+ padding-top:123px;
  margin-left: 19px;
 }
 
@@ -141,15 +150,17 @@ color: #333333;
     flex-shrink:1;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
 }
-.selecionado{
+
+
+.conteiner .prato.selecionado .icone{
+    opacity:1;
+}
+
+.conteiner .prato.selecionado{
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
     border-radius: 9px;
 }
 
-.selecionadoo{
-    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
-    border-radius: 9px;
-}
 
 .letreiro-bebida{
     width: 414px;
@@ -190,11 +201,9 @@ color: #333333;
     margin-top: 10px;
     margin-left:55px;
     color: green;
+    opacity: 0;
 }
 
-.escondido{
-    display:none;
-}
 
 .conteiner-verificado{
     

@@ -1,10 +1,3 @@
-let principall;
-let bebida;
-let sobremesa;
-
-
-/* - NAO DEU TEMPO FAZER O VALOR E O NOME NO WHATSAPP :( CHEGUEI PERTO DA LOGICA FALTANDO APENAS 10 minutos,DEIXAREI A LOGICA COMENTADA
-
 let pratoescolhido;
 let bebidaescolhido;
 let sobremesaescolhido;
@@ -12,90 +5,60 @@ let sobremesaescolhido;
 let valor1;
 let valor2;
 let valor3;
-*/
-
-
-let valortotal = valor1+valor2+valor3;
+let valortotal;
 
  function selecionarfrango(botaoselecionado){
-    const botaoexcluir = document.querySelector('.franguinho .selecionado')
-    const iconeselecionado = document.querySelector('.franguinho .selecionado .icone')
+   const botaoligado = document.querySelector('.franguinho .selecionado')
 
-    if (botaoexcluir !== null){ 
-    botaoexcluir.classList.remove('selecionado')
-    iconeselecionado.classList.add('escondido')
+    if (botaoligado !== null){ 
+    botaoligado.classList.remove('selecionado')
      }
 
-  
+     pratoescolhido = botaoselecionado.querySelector('.titulo-frango').innerHTML;
+     valor1 = botaoselecionado.querySelector('.valor').innerHTML
+ 
+     botaoselecionado.classList.add('selecionado')
 
-    const seletor = '.'+botaoselecionado;
-    const botao = document.querySelector(seletor);
-    botao.classList.add('selecionado')
-    const iconeescondido = document.querySelector('.selecionado .escondido')
-
-    /*
-    const teste2 = document.querySelector('.franguinho .titulo-frango')
-    teste3 = teste2.innerHTML;
-    console.log(teste3) */
-     
-     
-     
-
-
-    iconeescondido.classList.remove ('escondido') 
-    principall = botao.innerHTML;
     habilitaBotaoContinuar ()
  }
 
  function selecionarbebida(botaoselecionado){
+   const botaoligado = document.querySelector('.franguinho2 .selecionado')
 
-   const botaoexcluir = document.querySelector('.franguinho2 .selecionado')
-   const iconeselecionado = document.querySelector('.franguinho2 .selecionado .icone')
-
-   if (botaoexcluir !== null){ 
-   botaoexcluir.classList.remove('selecionado')
-   iconeselecionado.classList.add('escondido')
-    }
-    
-   const seletor = '.'+botaoselecionado;
-   const botao = document.querySelector(seletor);
-   botao.classList.add('selecionado')
-   const iconeescondido = document.querySelector('.selecionado .escondido')
-
-   iconeescondido.classList.remove ('escondido')
-    bebida = botao.innerHTML;
-   habilitaBotaoContinuar ()
-}
-
- function selecionarsobremesa(botaoselecionado){
-
-    const botaoexcluir = document.querySelector('.franguinho3 .selecionado')
-    const iconeselecionado = document.querySelector('.franguinho3 .selecionado .icone')
-
-    if (botaoexcluir !== null){ 
-    botaoexcluir.classList.remove('selecionado')
-    iconeselecionado.classList.add('escondido')
+    if (botaoligado !== null){ 
+    botaoligado.classList.remove('selecionado')
      }
-     
-    const seletor = '.'+botaoselecionado;
-    const botao = document.querySelector(seletor);
-    botao.classList.add('selecionado')
-    const iconeescondido = document.querySelector('.selecionado .escondido')
+     bebidaescolhido = botaoselecionado.querySelector('.franguinho2 .titulo-frango').innerHTML;
+     valor2 = botaoselecionado.querySelector('.valor').innerHTML
+     botaoselecionado.classList.add('selecionado')
 
-    iconeescondido.classList.remove ('escondido')
-
-    sobremesa = botao.innerHTML
+     bebida = botaoselecionado.innerHTML;
     habilitaBotaoContinuar ()
  }
 
+ function selecionarsobremesa(botaoselecionado){
+   const botaoligado = document.querySelector('.franguinho3 .selecionado')
 
+    if (botaoligado !== null){ 
+    botaoligado.classList.remove('selecionado')
+     }
+     sobremesaescolhido = botaoselecionado.querySelector('.franguinho3 .titulo-frango').innerHTML;
+     valor3 = botaoselecionado.querySelector('.valor').innerHTML
+     botaoselecionado.classList.add('selecionado')
+
+     sobremesa = botaoselecionado.innerHTML;
+    habilitaBotaoContinuar ()
+ }
+ 
 
  function habilitaBotaoContinuar (){
-   if(principall && bebida && sobremesa !== undefined){
+   if(pratoescolhido && bebidaescolhido && sobremesaescolhido !== undefined){
                const botaoContinuar = document.querySelector('.botaofinal');
                document.querySelector('.botaofinal').disabled = false;
                botaoContinuar.classList.add('botaoverde');
                botaoContinuar.innerHTML = 'Fechar Pedido';   
+               
+               valortotal = Number(valor1) + Number(valor2) + Number(valor3);
                
            }
    }
@@ -105,13 +68,13 @@ function funcaowhatsapp(){
      const nome = prompt('Qual o seu nome?')
      const endereço = prompt('Qual o seu endereço?')
        let encoded = encodeURIComponent(`Olá, gostaria de fazer o pedido:
-   - Prato: Frango Yin Yang
-   - Bebida: água 300ml
-   - Sobremesa: Pavé
-   Total: R$ 27.70
+   - Prato: ${pratoescolhido}
+   - Bebida: ${bebidaescolhido}
+   - Sobremesa: ${sobremesaescolhido}
+   - Total: R$ ${valortotal}
 
    Nome: ${nome}
-   Endereço ${endereço}`)
+   Endereço: ${endereço}`)
        window.open('https://wa.me/5575998741647?text='+encoded)
        
     }

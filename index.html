@@ -13,83 +13,89 @@
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700&family=Righteous&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="corpo">
-    <Div class="principal" ABA INTEIRA>
-        <div class="barrainicial " BARRA VERMELHA EM CIMA>
-                <div class="conteiner-logo" LOGO> 
-                    <h1 class="logo" LOGO>
-                        DrivenEats
-                    </h1>
+    
+        <div class="barrainicial" >
+                <div class="conteiner-logo" > 
+                    <h1 class="logo">DrivenEats</h1>
                 </div>
                 <div class="conteiner-subtitulo">
                     <p class="subtitulo">Sua comida em 6 minutos</p>
                 </div>
         </div>
-    </Div>
+
+
+
     <div class="conteiner" CAIXA DE INFORMACOES>  
             <div class="letreiro-frango" Primeiro,seu prato>
                 <h1 class="primeiro">Primeiro,seu prato</h1>
             </div>
+
+
+            
         <div class="franguinho">
-            <div  onclick="selecionarfrango('conteiner-frango1')" class="conteiner-frango1"  CAIXINHAS DOS PRATOS>
-                <img src="./imagens/frango_yin_yang 1.png" class="imagem-frango" alt="">
+            <div  onclick="selecionarfrango(this)" class="conteiner-frango1 prato">
+                <img class="imagem-frango" src="./imagens/frango_yin_yang 1.png">
                 <h1 class="titulo-frango">Frango Yin Yang</h1>
                 <p class="subtitulo-frango">Um pouco de batata, <br> um pouco de salada</p>
                     <h1 class="valor-frango">R$ <span class="valor">14.90 </span></h1>    
-                    <ion-icon class="icone escondido" name="checkmark-circle"></ion-icon>
+                    <ion-icon class="icone" name="checkmark-circle"></ion-icon>
             </div>
-            <div onclick="selecionarfrango('conteiner-frango2')"  class="conteiner-frango2" CAIXINHAS DOS PRATOS>
-                <img src="./imagens/frangopassarinho.jpg" class="imagem-frango" alt="">
+            <div onclick="selecionarfrango(this)"  class="conteiner-frango2 prato">
+                <img class="imagem-frango" src="./imagens/frangopassarinho.jpg">
                 <h1 class="titulo-frango">Frango á passarinho</h1>
                 <p class="subtitulo-frango">Um pouco de crocancia, <br> um pouco de molho</p>
                 <h1 class="valor-frango">R$ <span class="valor">22.08 </span></h1>
-                 <ion-icon class="icone escondido" name="checkmark-circle"></ion-icon>
+                 <ion-icon class="icone" name="checkmark-circle"></ion-icon>
             </div>
-            <div onclick="selecionarfrango('conteiner-frango3')"  class="conteiner-frango3" CAIXINHAS DOS PRATOS>
-                <img src="./imagens/frangocumpao.jpg" class="imagem-frango" alt="">
+            <div onclick="selecionarfrango(this)"  class="conteiner-frango3 prato">
+                <img class="imagem-frango" src="./imagens/frangocumpao.jpg">
                 <h1 class="titulo-frango">Frango Kung Pao</h1>
                 <p class="subtitulo-frango">Um pouco de batata, <br> um pouco de legumes</p>
                 <h1 class="valor-frango">R$ <span class="valor">33.90 </span></h1>
-                    <ion-icon class="icone escondido" name="checkmark-circle"></ion-icon>
+                    <ion-icon class="icone" name="checkmark-circle"></ion-icon>
             </div>
-            <div onclick="selecionarfrango('conteiner-frango4')"  class="conteiner-frango4" CAIXINHAS DOS PRATOS>
-                <img src="./imagens/frangomilanesa.webp" class="imagem-frango" alt="">
+            <div onclick="selecionarfrango(this)"  class="conteiner-frango4 prato">
+                <img class="imagem-frango" src="./imagens/frangomilanesa.webp">
                 <h1 class="titulo-frango">Frango a Milanesa</h1>
                 <p class="subtitulo-frango">Um pouco de molho, <br> um pouco carne</p>
                 <h1 class="valor-frango">R$ <span class="valor">44.87 </span></h1>
-                <ion-icon class="icone escondido" name="checkmark-circle"></ion-icon>
+                <ion-icon class="icone" name="checkmark-circle"></ion-icon>
             </div>
         </div>
-        <div class="letreiro-bebida" Agora,sua bebida>
+
+
+        <div class="letreiro-bebida" >
             <h1 class="primeiro">Agora,sua bebida</h1>
         </div>
-        <div class="franguinho2" CAIXINHA BEBIDAS>
-            <div onclick="selecionarbebida('conteiner-bebida1')"  class="conteiner-bebida1" CONTEINER AGUA>
-                <img src="./imagens/510S.jpg" class="imagem-frango" alt="">
+
+
+        <div class="franguinho2" >
+            <div onclick="selecionarbebida(this)"  class="conteiner-bebida1 prato" >
+                <img class="imagem-frango" src="./imagens/510S.jpg">
                 <h1 class="titulo-frango">Garrafa D'Água</h1>
                 <p class="subtitulo-frango"> Garrafa de 500ml</p>
-                    <h1 class="valor-frango">R$ 11.90</h1>
+                    <h1 class="valor-frango">R$ <span class="valor">3.90</span></h1>
                     <ion-icon class="icone escondido" name="checkmark-circle"></ion-icon>
             </div>
-            <div onclick="selecionarbebida('conteiner-bebida2')"  class="conteiner-bebida2" CONTEINER SUCO>
-                <img src="./imagens/Suco Whatsapp.jpg" class="imagem-frango" alt="">
+            <div onclick="selecionarbebida(this)"  class="conteiner-bebida2 prato" >
+                <img class="imagem-frango" src="./imagens/Suco Whatsapp.jpg">
                 <h1 class="titulo-frango">Suco De Grama</h1>
                 <p class="subtitulo-frango">Um suco natural com gosto do campo</p>
-                    <h1 class="valor-frango">R$ 11.90</h1>
+                    <h1 class="valor-frango">R$ <span class="valor"> 11.90</span></h1>
                     <ion-icon class="icone escondido" name="checkmark-circle"></ion-icon>
             </div>
-            <div onclick="selecionarbebida('conteiner-bebida3')"  class="conteiner-bebida3" CONTEINER COQUINHA>
-                <img src="./imagens/coquinha_gelada 1.png" class="imagem-frango" alt="">
+            <div onclick="selecionarbebida(this)"  class="conteiner-bebida3 prato" >
+                <img class="imagem-frango" src="./imagens/coquinha_gelada 1.png">
                 <h1 class="titulo-frango">Coquinha gelada</h1>
                 <p class="subtitulo-frango">Lata 350ml</p>
-                    <h1 class="valor-frango">R$ 11.90</h1>
+                    <h1 class="valor-frango">R$ <span class="valor"> 18.13</span></h1>
                     <ion-icon class="icone escondido" name="checkmark-circle"></ion-icon>
             </div>
-            <div onclick="selecionarbebida('conteiner-bebida4')" class="conteiner-bebida4" CONTEINER CAFEZINHO>
-                <img src="./imagens/cafeexpresso.jpeg.crdownload" class="imagem-frango" alt="">
+            <div onclick="selecionarbebida(this)" class="conteiner-bebida4 prato">
+                <img class="imagem-frango" src="./imagens/cafeexpresso.jpeg.crdownload">
                 <h1 class="titulo-frango">Café Expresso</h1>
                 <p class="subtitulo-frango">Isso é vida,apenas compre</p>
-                    <h1 class="valor-frango">R$ 11.90</h1>
+                    <h1 class="valor-frango">R$ <span class="valor">5.76</span></h1>
                     <ion-icon class="icone escondido" name="checkmark-circle"></ion-icon>
             </div>
         </div>
@@ -98,25 +104,25 @@
             <h1 class="primeiro">Por fim, sua sobremesa</h1>
         </div>
         <div class="franguinho3">
-            <div onclick="selecionarsobremesa('conteiner-sobremesa1')" class="conteiner-sobremesa1" CONTEINER CAFEZINHO>
-                <img src="./imagens/pave.jpg" class="imagem-frango" alt="">
+            <div onclick="selecionarsobremesa(this)" class="conteiner-sobremesa1 prato">
+                <img class="imagem-frango" src="./imagens/pave.jpg">
                 <h1 class="titulo-frango">Pavé</h1>
                 <p class="subtitulo-frango">Por favor não faça a piada</p>
-                <h1 class="valor-frango">R$ 33.14</h1>
+                <h1 class="valor-frango">R$ <span class="valor">33.14</span></h1>
                 <ion-icon class="icone escondido" name="checkmark-circle"></ion-icon>
             </div>
-            <div onclick="selecionarsobremesa('conteiner-sobremesa2')" class="conteiner-sobremesa2" CONTEINER CAFEZINHO>
-                <img src="./imagens/pudim 1.png" class="imagem-frango" alt="">
+            <div onclick="selecionarsobremesa(this)" class="conteiner-sobremesa2 prato">
+                <img class="imagem-frango" src="./imagens/pudim 1.png">
                 <h1 class="titulo-frango">Pudim</h1>
                 <p class="subtitulo-frango">Doce de leite e ovos,contém glúten</p>
-                    <h1 class="valor-frango">R$ 33.14</h1>
+                    <h1 class="valor-frango">R$<span class="valor">20.99</span></h1>
                     <ion-icon class="icone escondido" name="checkmark-circle"></ion-icon>
             </div>
-            <div onclick="selecionarsobremesa('conteiner-sobremesa3')" class="conteiner-sobremesa3" CONTEINER CAFEZINHO>
-                <img src="./imagens/chocolate1.jpg" class="imagem-frango" alt="">
+            <div onclick="selecionarsobremesa(this)" class="conteiner-sobremesa3 prato">
+                <img class="imagem-frango" src="./imagens/chocolate1.jpg">
                 <h1 class="titulo-frango">Chocolate Amargo</h1>
                 <p class="subtitulo-frango">Uma barra de chocolate média.</p>
-                    <h1 class="valor-frango">R$ 33.14</h1>
+                    <h1 class="valor-frango">R$<span class="valor">44.63</span></h1>
                     <ion-icon class="icone escondido" name="checkmark-circle"></ion-icon>
             </div>
         </div>
@@ -129,7 +135,7 @@
 
 
     </div>
-
+</div>
 
 
     <script src="scripts.js"></script>
